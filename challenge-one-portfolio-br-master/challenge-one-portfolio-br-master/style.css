@@ -1,0 +1,482 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #1e1e1e;
+    padding: 15px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__titulo {
+    font-size: 20px; 
+    color: #fff;
+    margin: 0;
+}
+
+.navegacao {
+    display: none;
+  }
+  
+  .navegacao.active {
+    display: block;
+  }
+  
+  @media (min-width: 768px) {
+    .navegacao {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: none;
+    }
+
+    .apresentacao {
+        flex-direction: column; 
+      }
+
+      .projetos__elemento {
+        align-items: center; 
+        text-align: center;
+    }
+
+    .projetos__imagem {
+        margin-bottom: 20px; 
+    }
+}
+
+.projetos__nome {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.projetos__descricao {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+.navegacao__lista {
+    list-style: none;
+    display: flex;
+    gap: 15px; 
+}
+
+.navegacao__elemento a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px; 
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navegacao__elemento a:hover {
+    color: #f1b814;
+}
+
+
+.navegacao__elemento a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #f1b814;
+    transition: width 0.3s ease;
+}
+
+.navegacao__elemento a:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+/* Seção de Apresentação */
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+    gap: 40px;
+}
+
+.apresentacao__foto {
+    display: flex;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    object-fit: cover;
+}
+
+.apresentacao__conteiner {
+    max-width: 600px;
+}
+
+.apresentacao__titulo {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.apresentacao__subtitulo {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.redes {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.redes__elemento a {
+    color: #1e1e1e;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.redes__elemento a:hover {
+    color: #f1b814;
+    transform: translateX(5px);
+}
+
+/* Sobre mim */
+.sobre-mim {
+    padding: 50px;
+    background-color: #f1f1f1;
+    margin: 20px 0;
+}
+
+.sobre-mim__titulo {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+    text-align: center;
+}
+
+.sobre-mim__texto {
+    font-size: 17px;
+    margin-bottom: 20px;
+    padding-left: 40px; 
+}
+
+/* Container habilidades e hobbies */
+.skills-hobbies-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 40px; 
+    padding: 50px;
+}
+
+.habilidades__lista, .hobbies__lista {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+/* Habilidades */
+.habilidades {
+    flex: 1; 
+    padding: 50px;
+    background-color: #f5f5f5;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.habilidades:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.habilidades__titulo {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+    text-align: center;
+}
+
+.habilidades__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.habilidades__elemento {
+    text-align: center;
+    width: 100px;
+}
+
+.habilidades__icone {
+    width: 35px;
+    height: 35px;
+}
+
+.habilidades__nome {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Hobbies */
+.hobbies {
+    flex: 1; 
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.hobbies:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.hobbies__titulo {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+    text-align: center;
+}
+
+.hobbies__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.hobbies__elemento {
+    text-align: center;
+    width: 100px;
+}
+
+.hobbies__icone {
+    width: 35px;
+    height: 35px;
+}
+
+.hobbies__nome {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Formação */
+.formacao {
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.formacao__titulo {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+}
+
+.formacao__lista {
+    list-style: none; 
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: flex-start; 
+}
+
+.formacao__elemento {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.formacao__icone {
+    width: 100px;
+    height: 100px;
+}
+
+.formacao__nome {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center; 
+}
+
+.formacao__detalhe {
+    color: #666;
+}
+
+/* Projetos */
+.projetos {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.projetos__titulo {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Flexbox para imagem e as informações */
+.projetos__elemento {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    margin-bottom: 40px;
+    text-align: left;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.projetos__imagem {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.projetos__nome {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.projetos__descricao {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Botão para GitHub */
+.projetos__botao a {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #1e1e1e; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.projetos__botao a:hover {
+    background-color: #f1b814; 
+    transform: translateY(-3px); 
+}
+
+/* Contato */
+.contato {
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.contato__titulo {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato__campo {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato__campo--textarea {
+    height: 100px;
+}
+
+.contato__botao {
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.contato__botao:hover {
+    background-color: #f1b814;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito nos botões */
+button, .contato__botao {
+    transition: all 0.3s ease;
+}
+
+button:hover, .contato__botao:hover {
+    background-color: #f1b814;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de voltar ao topo */
+.voltar-ao-topo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e1e1e; 
+    color: #ffffff; 
+    font-size: 16px;
+    text-decoration: none; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; 
+}
+
+.voltar-ao-topo:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+    background-color: #f1b814; 
+}
+
+/* Rodapé */
+.footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative; 
+}
+

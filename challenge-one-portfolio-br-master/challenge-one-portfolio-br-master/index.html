@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <title>Cíntia Medeiros</title>
+        <style>
+            .navegacao {
+                display: none; 
+            }
+    
+            .navegacao.active {
+                display: block; 
+            }
+    
+            .menu-toggle {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+<body>
+    <!-- Menu -->
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Cíntia Medeiros</h1>
+        <button class="menu-toggle">Menu</button>
+        <nav id="menu" class="navegacao">
+            <ul class="navegacao__lista">
+                <li class="navegacao__elemento"><a href="#sobre-mim">Sobre mim</a></li>
+                <li class="navegacao__elemento"><a href="#habilidades">Habilidades</a></li>
+                <li class="navegacao__elemento"><a href="#hobbies">Hobbies</a></li>
+                <li class="navegacao__elemento"><a href="#formacao">Formação</a></li>
+                <li class="navegacao__elemento"><a href="#projetos">Projetos</a></li>
+                <li class="navegacao__elemento"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navegacao = document.querySelector('.navegacao');
+
+            menuToggle.addEventListener('click', function () {
+                navegacao.classList.toggle('active'); 
+            });
+        });
+    </script>
+
+    <main>
+        <!-- Seção de Apresentação -->
+        <section class="apresentacao">
+            <img class="apresentacao__foto" src="assets/profile.jpg" alt="Foto de perfil de Cíntia">
+            <article class="apresentacao__conteiner">
+                <h2 class="apresentacao__titulo">Oiê, meu nome é Cíntia Medeiros e sou uma Dev Front-End em evolução.</h2>
+                <p class="apresentacao__subtitulo">Comunicadora e Designer de formação, atualmente estou participando do projeto Oracle ONE na Alura Latam.</p>
+                <ul class="redes">
+                    <li class="redes__elemento"><a href="https://github.com/Souzacint">Github <img src="assets/arrow.png" alt="Seta"></a></li>
+                    <li class="redes__elemento"><a href="https://www.linkedin.com/in/c%C3%ADntia-medeiros-8849942a9/">Linkedin <img src="assets/arrow.png" alt="Seta"></a></li>
+                    <li class="redes__elemento"><a href="https://www.instagram.com/souzacint/">Instagram <img src="assets/arrow.png" alt="Seta"></a></li>
+                    <li class="redes__elemento"><a href="https://drive.google.com/file/d/1rSpISI0UayqxaVNYCOHvL3xk5ZTv-44e/view?usp=drive_link">Currículo <img src="assets/arrow.png" alt="Seta"></a></li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Seção sobre mim -->
+        <section class="sobre-mim" id="sobre-mim">
+            <h2 class="sobre-mim__titulo">Sobre mim</h2>
+            <p class="sobre-mim__texto">Sou formada em Produção Publicitária, com especialização em Design Gráfico e Fotografia. Recentemente, decidi expandir meus conhecimentos para a área de tecnologia e me identifiquei com o desenvolvimento web. Iniciei minha carreira no varejo, trabalhando como vendedora na loja Corpo Seguro, e desde então, sempre busquei me aprimorar no atendimento ao público.
+                Ao longo da minha trajetória, desenvolvi uma habilidade forte para entender as necessidades das pessoas e cultivar empatia. Também aprendi a ser disciplinada, me comunicar de forma clara, me organizar e resolver problemas de maneira eficaz.</p>
+            <p class="sobre-mim__texto">Além do meu trabalho comercial, optei por ser empreendedora e criar meu próprio negócio como fotógrafa. Essa experiência me ajudou a descobrir meu propósito: ser um elo entre pessoas e soluções, funcionando como uma ponte que conecta necessidades humanas a respostas práticas. Sou apaixonada por música, leitura e o mar, que me inspiram a refletir, me conectar e aprender constantemente. No futuro, espero me tornar uma grande desenvolvedora, sempre em busca de crescimento e aprendizado.</p>
+        </section>
+
+        <div class="skills-hobbies-container">
+        <!-- Seção de Habilidades -->
+        <section class="habilidades" id="habilidades">
+            <h2 class="habilidades__titulo">Habilidades</h2>
+            <ul class="habilidades__lista">
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icone" src="assets/html.png" alt="Ícone HTML">
+                    <p class="habilidades__nome">html 5</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icone" src="assets/css_icon.png" alt="Ícone CSS">
+                    <p class="habilidades__nome">CSS</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icone" src="assets/js_icon.png" alt="Ícone JavaScript">
+                    <p class="habilidades__nome">JavaScript</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icone" src="assets/react_icon.png" alt="Ícone React">
+                    <p class="habilidades__nome">React</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icone" src="assets/photoshop_icon.png" alt="Ícone Photoshop">
+                    <p class="habilidades__nome">Photoshop</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icone" src="assets/lightroom_icon.png" alt="Ícone lightroom">
+                    <p class="habilidades__nome">lightroom</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icone" src="assets/excel_icon.png" alt="Ícone Excel">
+                    <p class="habilidades__nome">Excel</p>
+                </li>
+                
+            </ul>
+        </section>
+
+        <!-- Seção de Hobbies -->
+        <section class="hobbies" id="hobbies">
+            <h2 class="hobbies__titulo">Hobbies</h2>
+            <ul class="hobbies__lista">
+                <li class="hobbies__elemento">
+                    <img class="hobbies__icone" src="assets/microphone_icon.png" alt="Ícone de microfone">
+                    <p class="hobbies__nome">Cantar</p>
+                </li>
+                <li class="hobbies__elemento">
+                    <img class="hobbies__icone" src="assets/headphones_icon.png" alt="Ícone de Ouvir Música">
+                    <p class="hobbies__nome">Ouvir música</p>
+                </li>
+                <li class="hobbies__elemento">
+                    <img class="hobbies__icone" src="assets/tv_icon.png" alt="Ícone de monitor">
+                    <p class="hobbies__nome">Assistir filmes/séries</p>
+                </li>
+                <li class="hobbies__elemento">
+                    <img class="hobbies__icone" src="assets/book_icon.jfif" alt="Ícone de livro">
+                    <p class="hobbies__nome">Ler</p>
+                </li>
+                <li class="hobbies__elemento">
+                    <img class="hobbies__icone" src="assets/corrida_icon.png" alt="Ícone de pessoa correndo">
+                    <p class="hobbies__nome">Praticar exercícios</p>
+                </li>
+                <li class="hobbies__elemento">
+                    <img class="hobbies__icone" src="assets/cozinhar_icon.jfif" alt="Ícone de Cozinhar">
+                    <p class="hobbies__nome">Cozinhar</p>
+                </li>
+                <li class="hobbies__elemento">
+                    <img class="hobbies__icone" src="assets/camera_icon.png" alt="Ícone de Câmera">
+                    <p class="hobbies__nome">Fotografar</p>
+                </li>
+            </ul>
+        </div>
+        </section>
+
+        <!-- Seção de Formação Acadêmica -->
+        <section class="formacao" id="formacao">
+            <h2 class="formacao__titulo">Formação Acadêmica</h2>
+            <ul class="formacao__lista">
+                <li class="formacao__elemento">
+                    <img class="formacao__icone" src="assets/logo_alura.png" alt="Logotipo da Alura">
+                    <div>
+                        <h3 class="formacao__nome">Formação em Front-End</h3>
+                        <p class="formacao__detalhe">2024-2025 - Alura</p>
+                    </div>
+                </li>
+                <li class="formacao__elemento">
+                    <img class="formacao__icone" src="assets/facottur_logo.jfif" alt="Logotipo da Facottur">
+                    <div>
+                        <h3 class="formacao__nome">Produção Publicitária</h3>
+                        <p class="formacao__detalhe">2019 - Facottur</p>
+                    </div>
+                </li>
+                <li class="formacao__elemento">
+                    <img class="formacao__icone" src="assets/graduation_icon.png" alt="Icone de chapéu de formatura">
+                    <div>
+                        <h3 class="formacao__nome">Ensino Médio</h3>
+                        <p class="formacao__detalhe">2012 - Completo</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    <!-- Seção de Projetos -->
+<section class="projetos" id="projetos">
+    <h2 class="projetos__titulo">Meus Projetos</h2>
+    <ul class="projetos__lista">
+        <li class="projetos__elemento">
+                <img class="projetos__imagem" src="assets/projeto_encriptador.png" alt="Imagem do projeto Encriptador">
+                <div class="projetos__informacao">
+                <p class="projetos__nome">Encriptador</p>
+            <p class="projetos__descricao">
+                Desenvolvido com HTML, CSS e JavaScript, 
+                que permite criptografar e descriptografar mensagens de forma rápida e intuitiva.
+            </p>
+            <button class="projetos__botao">
+                <a href="https://github.com/Souzacint/Portf-lio-Encriptador.git" target="_blank">Repositório GitHub</a>
+            </button>
+        </li>
+    </div>
+    </ul>
+</section>
+    </main>
+
+    <!-- Seção de Contato -->
+    <section class="contato" id="contato">
+        <h2 class="contato__titulo">Contato</h2>
+        <form id="contactForm" class="contato__formulario">
+            <label for="nome">Nome</label>
+            <input id="nome" class="contato__campo" type="text" placeholder="Nome" required>
+            <span id="nameError" class="error-message"></span>
+
+            <label for="email">Email</label>
+            <input id="email" class="contato__campo" type="email" placeholder="Email" required>
+            <span id="emailError" class="error-message"></span>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" class="contato__campo" placeholder="Digite sua mensagem" required></textarea>
+            <span id="messageError" class="error-message"></span>
+
+            <button id="submitBtn" class="contato__botao" type="submit" disabled>Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Botão de voltar ao topo -->
+    <a href="#top" class="voltar-ao-topo">Voltar ao topo</a>
+
+<!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 Cíntia Medeiros de Souza. Todos os direitos reservados.</p>
+    </footer>    
+</body>
+</html>
